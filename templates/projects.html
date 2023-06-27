@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+        <h1 class="logo-text">My Portfolio</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('projects') }}"  class="active">Projects</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 class= "project_heading">My Projects</h1>
+    <img src="static/rocket.gif" alt="Animated Emoji" class="emoji">
+    <div class="project">
+      <a href="https://tariqaziz9164-streamlit-app-fzs00a.streamlit.app/">
+        <img src="static/chart.gif" alt="Animated Emoji" class="emoji">
+      </a>
+      <h2>Data Analysis and Visualization</h2>
+      <p>This is a complete application for analize and visualize Data Set Upload a CSV file and see the magic.</p>
+    </div>
+    <div class="project">
+      <a href="https://alishop.streamlit.app/">
+        <img src="{{ url_for('static', filename='database1.png') }}" alt="Project 2">
+      </a>
+      <h2>Tailor Shop Management System</h2>
+      <p>This is a complete CRUD operations system with user interface . You can Creat , Read , Update and Delete records.For this project backend is design with SQLite
+        Please use<br> User name : admin <br> password : ali123</p>
+    </div>
+    <div class="project">
+      <a href="https://tariqaziz9164-patient-app-6uy8n9.streamlit.app/">
+        <img src="{{ url_for('static', filename='patient.png') }}" alt="Project 3">
+      </a>
+      <h2>Patient Management System</h2>
+      <p class="project3_text">This is project is about a Patient database management system using streamlit and MySQL. This is also a fully CRUD operation ready system with a relational connection of Patient table and Appointment table.</p>
+    </div>
+  </main>  
+    <footer>
+      <p>&copy; 2023 My Portfolio</p>
+    </footer>
+  </body>
+</html>

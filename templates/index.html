@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-container">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+          <h1 class="logo-text">My Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <h1 class="hero-title">Welcome to My Portfolio</h1>
+        <img src="static/juggling.gif" alt="Animated Emoji" class="emoji">
+
+        <p class="hero-description">
+          Database management involves the efficient organization, storage, and retrieval of structured data.<br> It focuses on designing, implementing, and maintaining databases to ensure data integrity and security.<br> It encompasses tasks such as creating tables, defining relationships, optimizing queries, and managing access controls.<br>
+        </p>
+        <p>
+          Web development, on the other hand, refers to the process of building and maintaining websites or web applications.<br> It involves designing user interfaces, writing code (HTML, CSS, JavaScript, etc.), and integrating various functionalities.
+        </p>
+        <p class="hero-description">
+          Data analysis is the practice of examining and interpreting data to uncover meaningful insights, patterns, and trends.<br> It involves techniques such as statistical analysis, data mining, and machine learning algorithms.<br> Data visualization plays a crucial role in presenting data in a visual format, making it easier to comprehend and derive insights. It utilizes charts, graphs, maps, and other visual elements to represent complex information effectively. 
+        </p>
+        <p>
+          Lastly, a dashboard for data science is a user interface that displays key metrics, visualizations, and summaries of data analysis. It provides a centralized view of data-driven insights, allowing users to monitor and interact with the data in a concise and intuitive manner. Together, these fields form a powerful combination for managing, analyzing, and visualizing data to drive informed decision-making in various domains.
+        </p>
+      </section>
+
+      <section class="about-section">
+        <h2>About Me</h2>
+        <p>
+          Hi there! my name is Tariq Aziz,I m passionate about web development and data science. With my skills in Flask, Streamlit,Pandas,and database systems like SQLite and MySQL, I create solutions that provide meaningful insights and enhance user experiences.
+        </p>
+        <p>
+          In my free time, I actively contribute to open-source projects and continue learning and exploring new technologies.
+        </p>
+      </section>
+
+
+      <section class="skills-section">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+          <li>Flask</li>
+          <li>Streamlit</li>
+          <li>Pandas</li>
+          <li>HTML/CSS/JavaScript</li>
+          <li>Git/GitHub</li>
+          <li>SQLite</li>
+          <li>MySQL</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+  </body>
+</html>
+

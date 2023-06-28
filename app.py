@@ -42,6 +42,10 @@ def contact():
         
     return render_template('contact.html')
 
+@app.route('/MyWork')
+def MyWork():
+    return render_template('MyWork.html')    
+
 @app.route('/thank_you')
 def thank_you():
     return render_template('thank_you.html')

@@ -5,13 +5,19 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="{{ url_for('index') }}">Home</a></li>
-        <li><a href="{{ url_for('projects') }}">Projects</a></li>
-        <li><a href="{{ url_for('contact') }}">Contact</a></li>
-      </ul>
-    </nav>
+<header>
+      <nav>
+        <div class="logo-container">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo">
+          <h1 class="logo-text">My Portfolio</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('index') }}">Home</a></li>
+          <li><a href="{{ url_for('projects') }}">Projects</a></li>
+          <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <h3>thanks for contacting me , I will contact you soon</h3>
 
   </body>

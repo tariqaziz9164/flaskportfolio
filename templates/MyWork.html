@@ -23,60 +23,92 @@
 
     <!-- my style style.css-->
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 
 
     <title>MyWork</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./images/logo.png"> </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                My Thoughts
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="ProductDesign.html">Product Design</a></li>
-                                <li><a class="dropdown-item" href="AppDesign.html">App Design</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item active" href="#">My Work</a></li>
-                            </ul>
-                        </li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="static/logo.png" alt="logo">  </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="{{url_for('index')}}">Home</a>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="hamzaProperty.html">Projects</a>
-                          </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="{{url_for('MyWork')}}">Design Work</a>
+            </li>
 
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success btn-light" type="submit">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-    </header>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
+   
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+           
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <main>
+
+    <section class="text-center ">
+      <div class="container">
+
+        <h2 class="my-3 p-2 rounded shadow">Design Rules</h2>
+
+        <div class=" row g-2">
+
+          <div class="col-md-6 my-2 bg-warning rounded shadow g-2">
+            Visibility of system status.
+
+          </div>
+          <div class=" my-2 bg-secondary rounded text-light shadow col-md-6 ">
+            User control and freedom.
+          </div>
+          <div class=" my-2 bg-seccess rounded shadow col-md-6 ">
+            Consistency and standards.
+
+          </div>
+          <div class="  my-2 bg-info rounded  shadow col-md-6">
+            Flexibility and efficiency of use.
+          </div>
+          <div class=" my-2 bg-danger rounded shadow text-light col-md-6">
+            Error prevention.
+          </div>
+          <div class=" my-2 bg-primary rounded shadow col-md-6">
+            Help and documentation.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <hr>
+
+
         <section>
             <div id="main-content" class="container">
                 <h2 class="text-center mt-2">
@@ -91,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section>
+    <section>
             <div class="container  mt-3">
 
                 <div class="row text-center">
@@ -162,8 +194,82 @@
 
             </div>
 
-        </section>
+    </section>
+    <hr>
+
+    <section>
+      <div class="container text-center">
+        <h1 class="shadow p-2">Wire framing</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2 class="mt-3">Register Screen</h2>
+              <img src="./images/Register (step 1).png" class="img-thumbnail" alt="">
+            </div>
+
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2 class="mt-3 ">Validation</h2>
+              <img src="./images/Landing to home.jpg" class="img-thumbnail" alt="">
+            </div>
+
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2 class="mt-3">Product Screen</h2>
+              <img src="./images/products category1.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
         <hr>
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm12 col-md-4 rounded-3 ">
+              <h2 class="mt-3">Creat Account</h2>
+              <img src="./images/creat account.jpg" class="img-thumbnail" alt="">
+            </div>
+
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2 class="mt-3">Vertical meue</h2>
+              <img src="./images/menu01.jpg" class="img-thumbnail" alt="">
+            </div>
+
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2 class="mt-3">Selection</h2>
+              <img src="./images/size menu.jpg" class="img-thumbnail" alt="">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm12 col-md-4 rounded-3 ">
+              <h2>Info Screen</h2>
+              <img src="./images/personal info.jpg" class="img-thumbnail" alt="">
+            </div>
+
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2>Checkout</h2>
+              <img src="./images/checkout.jpg" class="img-thumbnail" alt="">
+            </div>
+
+            <div class="col-sm12 col-md-4 rounded-3">
+              <h2>Marup</h2>
+              <img src="./images/markup02.png" class="img-fluid mt-lg-5 mt-md-5" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col">
+            <h2>A sample of Home Page</h2>
+            <img src="static/card2.jpg" class="img-fluid shadow mb-3" alt="design image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
         <!--Example of navigation-->
         <section>
             <div class="container text-center">
@@ -189,10 +295,11 @@
                                         aria-disabled="true">Disabled</a>
                                 </li>
                             </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
+                              <form class="d-flex">
+                              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                              <button class="btn btn-outline-success btn-light" type="submit">Search</button>
+                              </form>        
+
                         </div>
                     </div>
                 </nav>
@@ -246,7 +353,7 @@
         <hr>
         <section>
             <div class="container text-center text-light">
-                <h2>
+                <h2 class="myh2">
                     Vertical navigation
                 </h2>
 
@@ -471,13 +578,13 @@
             <div class="container text-center">
                 <h2>Alerts are use in spacial situations</h2>
                 <div class="alert alert-primary" role="alert">
-                    A simple primary alert—check it out!
+                    A simple primary alert check it out
                 </div>
                 <div class="alert alert-secondary" role="alert">
-                    A simple secondary alert—check it out!
+                    A simple secondary alert check it out
                 </div>
                 <div class="alert alert-danger" role="alert">
-                    A simple success alert—check it out!
+                    A simple success alert check it out
                 </div>
             </div>
        </section>
@@ -530,7 +637,7 @@
 
             <div class="container my-4 text-center">
                 <div class="card">
-                    <img src="./images/design1.jpg" class="card-img-top" alt="...">
+                    <img src="static/card4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Attractive design smoot user fllow</h5>
                         <p class="card-text">We design with Figma a modern design tool today market.</p>
@@ -541,29 +648,7 @@
 
         </section>
         <hr>
-        <section>
-            <div class="container">
-                <div class="row text-center">
-                    <h2>Some of design logos</h2>
-                    <div class="col-sm-6">
-                        <img src="./images/logo1.png" class="rounded m-" alt="logo-design1">
-                    </div>
-                    <div class="col-sm-6">
-                        <img src="./images/logo2.png" class="rounded m-3" alt="logo-design2">
-                    </div>
-                    <div class="col-sm-6">
-                        <img src="./images/logo3.png" class="rounded m-3" alt="logo-design3">
-                    </div>
-                    <div class="col-sm-6">
-                        <img src="./images/logo4.png" class="rounded m-3" alt="logo-design4">
-                    </div>
-                    <div class="col-sm-6 mt-lg-5">
-                        <img src="./images/logo5.png" class="rounded m-3 mt-lg-3" alt="logo-desgn5">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <hr>
+
         <section>
 
             <!-- tables -->
@@ -635,13 +720,111 @@
         </div>
     </section>
     <hr>
+
+    <section>
+      <div class="container text-center">
+        <div class="row text-center align-item-center justify-content-between">
+          <div class="col-md-6">
+            <h1 class="shadow mt-md-5 p-2">Design software for markup</h1>
+            <p class="lead mt-md-5">For prototyping and wireframing we use <span class="text-warning fs-3">Figma</span>
+              software
+              which is a
+              modern tool.
+              The benefit of prototyping apps is that they allow the designer <br> to focus solely on user experience
+              early on. They also tend to lead to less <br> original designs. While this can often be preferable the
+              goal
+              is a seamless shopping experience—if you want to make more creative designs, textures or animations, We
+              are
+              here to serve you with a great UI.
+            </p>
+          </div>
+
+          <div class=" col-md-6 mt-md-5 mt-lg-2 mb-lg-2 pt-md-5">
+            <img src="static/001.jpg" class="img-fluid" alt="design-markup">
+          </div>
+          <hr>
+          <div class="col-md-6 my-3">
+            <h1 class=" mt-md-5 shadow p-2">
+              Template bases layout approach
+
+            </h1>
+            <p class="mt-lg-5">Templat base design is very helpfull for planning of images , feature lists
+              , Q&As , testimonials ect.
+              Standerd lyout are use these days across different copanies.For example E-commerce app
+              tend to display images on the left said and related information on the right said.
+              Design with the rest of the site in mind because product pages are not designed in isolation
+              , they have to integrate with the rest of website.
+            </p>
+          </div>
+          <div class="col-md-6 my-3">
+            <img src="static/009.jpg" class="img-fluid mt-md-5" alt="android-home-design">
+          </div>
+          <hr>
+          <div class="col-md-6 my-3">
+            <h1 class=" mt-sm-2 mt-md-3 mt-lg-5 shadow p-2">
+              Selectivety prioritize information.</h1>
+            <p class="mt-lg-5">This means that a good design must make decisions about what the user has to see and
+              when.
+              With specific design techniques such as size, color, and font style established priority are
+              summed up in the principales of visual hierarchy.
+            </p>
+          </div>
+
+          <div class="col-md-6">
+            <img src="static/004.jpg" class="img-fluid" alt="App-design">
+          </div>
+          <hr>
+          <div class="col-md-6 h-50 ">
+            <h1 class="shadow p-2 mt-md-5 pt-lg-5">Tell a story with images</h1>
+            <p class="mt-lg-5">Images are inevitable the most eye-catching part of a product design for a the simple
+              reason
+              that they are faster to scan than text.
+              <span class="text-warning fs-2">These days online shoppers expect to see an average of 6 images and at
+                least 1
+                videos
+                on product page.</span>
+              At the same time, images must be more than attention grabbing.This means that the images should
+              creat an experience of the product, telling a story without words.
+              We use images according to the product.
+              For physical products,dimentions are often important,and this involves
+              more than displaying the measurements.
+              For products or services without a visual component,designing process should be
+              more creative that envoke the experience of using the product.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="static/saly-19.png" class="img-fluid mt-md-5" alt="App-design2">
+          </div>
+          <hr>
+
+        
+          <div class="col-md-6 my-3">
+            <h1 class="shadow p-2">
+              Agreat product page design needs a great designer.
+            </h1>
+            <p>
+              The design of a product page is part science,part style and all business.
+              At the the end of the day, a great product page is designed to elevate a
+              product out of the computer screen and into the customer's everyday reality.
+            </p>
+          </div>
+
+          <div class="col-md-6 my-3">
+            <img src="static/Android Home.jpg" class="img-fluid" alt="home-page-design">
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
     <hr>
     <footer>
         <div class="container-fluid">
             <div class="row text-center">
                 <section class="col-sm-12 col-lg-4">
                     <span><b>Page Links:</b></span><br>
-                    <a class="logo-footer navbar-brand" href="index.html"><img src="./images/logo.png"> </a><br>
+                    <a class="logo-footer navbar-brand" href="index.html"><img src="static/logo.png"> </a><br>
                     <a href="contact.html">Contact</a><br>
                     <a href="MyWork.html">My Work </a><br>
                     <a href="ProductDesign.html">Product Design</a><br>

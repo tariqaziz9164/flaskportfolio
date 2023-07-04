@@ -32,10 +32,12 @@
 
 <body>
 
+  <!--navigation-->
+
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="./images/logo.png"> </a>
+        <a class="navbar-brand" href="#"><img src="static/logo.png"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,30 +45,33 @@
         <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                My Thoughts
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item active" href="#">Product Design</a></li>
-                <li><a class="dropdown-item" href="AppDesign.html">App Design</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="MyWork.html">My Work</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('MyWork')}}">Design Work</a>
+            </li>
+
+
+
+            <li class="nav-item">
+              <a class="nav-link active" href="{{url_for('ProductDesign')}}">Product Design</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
+   
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
             </li>
 
+            
             <li class="nav-item">
-              <a class="nav-link" href="hamzaProperty.html">Projects</a>
+              <a class="nav-link" href="{{url_for('MyWork')}}">About Us</a>
             </li>
+           
+
 
           </ul>
           <form class="d-flex">
@@ -135,7 +140,7 @@
           </div>
 
           <div class=" col-md-6 mt-md-5 mt-lg-2 mb-lg-2 pt-md-5">
-            <img src="./images/Group 71.jpg" class="img-fluid" alt="design-markup">
+            <img src="static/001.jpg" class="img-fluid" alt="design-markup">
           </div>
           <hr>
           <div class="col-md-6 my-3">
@@ -152,7 +157,7 @@
             </p>
           </div>
           <div class="col-md-6 my-3">
-            <img src="./images/Android Home.jpg" class="img-fluid mt-md-5" alt="android-home-design">
+            <img src="static/009.jpg" class="img-fluid mt-md-5" alt="android-home-design">
           </div>
           <hr>
           <div class="col-md-6 my-3">
@@ -166,7 +171,7 @@
           </div>
 
           <div class="col-md-6">
-            <img src="./images/product design1.png" class="img-fluid" alt="App-design">
+            <img src="static/004.jpg" class="img-fluid" alt="App-design">
           </div>
           <hr>
           <div class="col-md-6 h-50 ">
@@ -188,24 +193,11 @@
             </p>
           </div>
           <div class="col-md-6">
-            <img src="./images/appdesign001.png" class="img-fluid mt-md-5" alt="App-design2">
+            <img src="static/saly-19.png" class="img-fluid mt-md-5" alt="App-design2">
           </div>
           <hr>
-          <div class="col-md-6">
-            <h1 class="shadow p-2 mt-md-3">
-              Design with customer reviews.
-            </h1>
-            <p>These spaces can be an oppertunity for brands to respond to questions
-              and negative comments,showcasing their personalized care and customer services.
-              Conversely,neglecting to include content like this can be perceived as a lack
-              of confidence or as though the seller has something to hide.
-            </p>
-          </div>
 
-          <div class="col-md-6 my-3">
-            <img src="./images/Frame 1.jpg" class="img-fluid" alt="App-design3">
-          </div>
-          <hr>
+        
           <div class="col-md-6 my-3">
             <h1 class="shadow p-2">
               Agreat product page design needs a great designer.
@@ -218,7 +210,7 @@
           </div>
 
           <div class="col-md-6 my-3">
-            <img src="./images/Frame 4504.jpg" class="img-fluid" alt="home-page-design">
+            <img src="static/Android Home.jpg" class="img-fluid" alt="home-page-design">
           </div>
 
 

@@ -17,13 +17,7 @@ class Contact(db.Model):
         self.email = email
         self.message = message
 
-@app.route('/')
-def index():
-    return render_template('index.html')
 
-@app.route('/projects')
-def projects():
-    return render_template('projects.html')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -42,9 +36,27 @@ def contact():
         
     return render_template('contact.html')
 
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')    
+
 @app.route('/MyWork')
 def MyWork():
-    return render_template('MyWork.html')    
+    return render_template('MyWork.html')  
+
+@app.route('/ProductDesign')
+def ProductDesign():
+    return render_template('ProductDesign.html')
+
+@app.route('/AppDesign')
+def AppDesign():
+    return render_template('AppDesign.html')    
+
 
 @app.route('/thank_you')
 def thank_you():

@@ -4,8 +4,8 @@
     background-color: rgb(122, 3, 122);
     text-align: justify;
     font-family: "Lato",sans-serif;
-*/
-}
+
+}*/
 
 .myh1{
     
@@ -17,6 +17,7 @@
     text-transform: uppercase;
     text-shadow: 2px,2px,2px,#222;
     border-radius: 1rem;
+    text-align: center;
     
 }
 
@@ -30,6 +31,7 @@
     text-transform: uppercase;
     text-shadow: 8px,8px,8px,#222;
     border-radius: 1rem;
+    text-align: center;
     
 }
 
@@ -43,28 +45,19 @@
     color: white;
 }    
 
-h1, h2{
+/*h1, h2{
     color: whitesmoke;
     text-align: center;
     color: rgb(37, 1, 83);
     font-family: sans-serif,arial;
-}
-
-li{
-    margin: 1rem;
-    font-weight: bold;
-}
+}*/
 
 
 
-button{
-    color: tomato;
-    background-color: rgb(52, 11, 105);
-    font-weight: 50px;
-    margin-top: 200px;
-    border-radius: 10px;
-    
-}
+
+
+
+
 /*.container{
     align-items: center;
     width: 100px;

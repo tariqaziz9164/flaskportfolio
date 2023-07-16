@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!--bootsrap icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- my style style.css-->
+
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+  <link rel="icon" type="image/png" href="static/icon.png">
+  <title>Backend</title>
+</head>
+
+<body>
+
+  <!--navigation-->
+
+  <header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="static/logo.png" alt="logo"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>   
+        </button>
+        <div class="collapse navbar-collapse bg-primary" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link" href="{{url_for('index')}}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('MyWork')}}">Designing</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('dashboard')}}">Dashboard Design</a>
+            </li>  
+
+
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Backend Design</a>
+   
+            </li>                      
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
+   
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+           
+
+
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="myh1 shadow pb">Welcome to Our Back-End Services!</h1>
+      <hr>
+      <div class="container">
+       <p>We specialize in providing robust and scalable back-end services, tailored to meet the specific database needs of our clients. With our expertise in MySQL, SQLite, and PostgreSQL, we offer comprehensive solutions that ensure efficient data management and seamless integration for your business.</p>
+      </div>
+      <hr> 
+    </div>
+    
+
+    <section>
+      <div class="container my-3">
+        <div class="row justify-content-center">
+          <h2 class="myh2">Custom Database Design</h2>
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            <div class="card text-center">
+              <img src="static/5.png" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h6 class="card-title">Database Connection in php with MySQL</h6>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            <div class="card text-center">
+              <img src="static/6.png" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h6 class="card-title">Database Table Python with SQLite</h6>  
+              </div>
+            </div>
+          </div>
+        </div> 
+        <h6> We understand that each business has unique requirements when it comes to data storage and retrieval.<h4> We prefer Python</h4> however we work closely with you to analyze your business needs and design a customized database architecture that aligns with your goals. From designing tables and relationships to optimizing performance, we ensure your database is tailored to meet your specific needs.</h6>
+      </div>
+    </section>
+    <hr>        
+    <div class="container text-bg-secondary">
+
+         <div class="row justify-content-center">
+          <h2 class="myh2">Custom Tables Design</h2>
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            <div class="card text-center">
+              <img src="static/6.png" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h6 class="card-title">Database Table SQLite</h6>  
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            <div class="card text-center">
+              <img src="static/data2.png" class="card-img-top" alt="card1">
+              <div class="card-body">
+                <h6 class="card-title">Database Table PostgreSQL</h6>  
+              </div>
+            </div>
+          </div>
+          <h6>With custom base table design, we go beyond the limitations of off-the-shelf solutions and create a database schema that perfectly captures the intricacies and complexities of your data. We carefully analyze your data requirements, relationships, and workflows to design tables that optimize data storage, retrieval, and query performance.<br>
+            By leveraging our custom base table design services, you can expect a database structure that is highly optimized, scalable, and future-proof. We ensure that your tables are designed with the appropriate data types, constraints, and indexing strategies, resulting in improved data integrity, faster data access, and enhanced overall system performance.<br>
+            Our focus on custom base table design extends to ensuring data consistency and eliminating redundancies. We implement normalization techniques to organize your data into logical entities, eliminating data anomalies and ensuring efficient data updates and maintenance.<br>
+            Moreover, we understand the importance of adaptability in today's dynamic business landscape. Our custom base table designs are flexible enough to accommodate future changes and expansions, saving you time and resources in the long run.<br>
+          Contact us today to explore how our custom base table design services can streamline your data operations, enhance performance, and unlock the full potential of your database. We look forward to collaborating with you to create a tailored database structure that aligns perfectly with your business objectives.</h6>
+        </div> 
+      <hr>
+      <h1 class="myh2 shadow pb">powerful Streamlit library for frontend</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            
+              <img src="static/streamlitcard.png" class="card-img-top" alt="card1">
+    
+          </div>
+        </div>
+      </div>
+
+       <h6> Streamlit is a user-friendly and efficient open-source framework that enables us to create interactive and dynamic user interfaces with ease.</h6>
+       <h4>Here's why we choose Streamlit for our frontend development:</h4>
+       <lu>
+        <h3> Rapid Prototyping:</h3>
+        <li> Streamlit's intuitive and straightforward syntax allows us to quickly prototype and iterate on frontend designs. It empowers us to transform your ideas into functional prototypes rapidly, reducing development time and speeding up the feedback loop.<br>
+          To see sreamlit component click here <a href="https://docs.streamlit.io/library/components">Streamlit Components</a></li>
+
+        <h3>Interactive User Interfaces:</h3>
+        <li> With Streamlit, we can create interactive user interfaces that engage and captivate your users. We leverage its extensive collection of widgets, enabling us to incorporate interactive elements such as sliders, checkboxes, dropdowns, and buttons seamlessly. These features enhance the user experience and make your application more engaging.</li>
+
+        <h3>Seamless Integration with Python:</h3>
+        <li> Streamlit is designed to work seamlessly with Python, our language of choice for backend development. This tight integration allows us to leverage the full power of Python libraries and easily connect your frontend with backend services and data sources.</li>
+
+        <h3>Data Visualization Capabilities:</h3>
+        <li> Streamlit provides excellent support for data visualization. We can create stunning and informative charts, graphs, and interactive visualizations to help you make sense of your data. Whether it's presenting statistical information, trends, or insights, Streamlit enables us to convey complex data in a clear and visually appealing manner.</li>
+
+        <h3>Deployment Flexibility:</h3>
+        <li> Streamlit offers flexible deployment options, allowing us to host your application on various platforms, including cloud services, servers, or even as standalone applications. This flexibility ensures that your application is easily accessible and scalable, regardless of your hosting preferences or requirements.<a href="https://docs.streamlit.io/streamlit-community-cloud">Streamlit Community Cloud</a></li>
+
+        <h3>Community and Ecosystem:</h3>
+        <li> Streamlit has a vibrant and active community of developers, contributing to its growth and continuously enhancing its capabilities. This means that we have access to a wealth of resources, examples, and community-driven packages that can further enhance the functionality and visual appeal of your frontend application.<br>For more information see <a href="https://docs.streamlit.io/">Streamlit Documentation</a></li>
+
+
+        <li> By utilizing Streamlit for frontend development, we can create immersive, interactive, and visually appealing user interfaces that bring your application to life. Its simplicity, versatility, and integration with Python make it an ideal choice for delivering outstanding frontend experiences.<br>Explore our projects Deplolyed on Streamlit, Please walk up apps if sleep. <br> <a href="https://alishop.streamlit.app/">Tailor Shop</a>  <br><a href="https://tariqaziz9164-streamlit-app-fzs00a.streamlit.app/">Data Analysis</a>
+        <br><a href="https://school.streamlit.app/">School Management System</a> </li>
+       </lu>
+      </div>
+       
+    </div>
+    <hr>
+    <div class="container">
+      <h1 class="myh1 shadow pb">Pandas for Data Analysis</h1>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            
+              <img src="static/pandas.png" class="card-img-top" alt="card1">
+    
+          </div>
+        </div>
+      </div>
+      
+       <h6>Pandas offers a robust and intuitive framework for handling structured data, enabling us to efficiently clean, transform, and analyze datasets of varying sizes and complexities. Our team of skilled data analysts leverages Pandas' extensive functionality to extract meaningful patterns, trends, and correlations from your data.For further information visite <a href="https://pandas.pydata.org/docs/">Pandas Documentation</a><br>
+        Using Pandas, we can perform a wide range of data analysis tasks, such as data cleaning, data exploration, aggregation, filtering, and merging of datasets. We apply statistical techniques and advanced analytics to derive actionable insights, enabling you to make data-driven decisions with confidence.<br>
+        Pandas also seamlessly integrates with other popular Python libraries such as NumPy, Matplotlib, Ploltly and SciPy, allowing us to create compelling visualizations, interactive dashboards, and detailed reports that convey the story behind your data effectively.<br>
+        Our data analysis services using Pandas extend to predictive modeling and machine learning. By leveraging Pandas' integration with libraries like Scikit-learn, we can build predictive models, perform feature engineering, and assess model performance to help you gain a competitive edge.<br>Visist the project for experiment
+      <br><a href="https://tariqaziz9164-streamlit-app-fzs00a.streamlit.app/">Data Analysis and Visualization</a></h6>
+    </div>  
+      <hr>
+
+    <div class="container">
+      <h1 class="myh1 shadow pb">Plotly.express for Data Visualization</h1>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-4 shadow my-3">
+            
+              <img src="static/plotly.png" class="card-img-top" alt="card1">
+    
+          </div>
+        </div>
+      </div>
+      
+       <h6>Plotly Express, a leading Python library renowned for its interactive and stunning visualizations. With Plotly Express, we can transform your data into visually captivating and informative representations that drive understanding and insights. <a href="https://plotly.com/python/plotly-express/">Poltly Documentation</a><br>
+        Plotly Express simplifies the process of creating interactive visualizations, allowing us to bring your data to life with just a few lines of code. We harness its extensive range of chart types, including scatter plots, bar charts, line plots, histograms, and more, to showcase your data in the most impactful and intuitive manner.<br>
+        With Plotly Express, we can craft interactive dashboards, enabling you to explore and interact with your data dynamically. We incorporate features like hover tooltips, zooming, panning, and filtering, empowering you to delve deeper into the data, uncover patterns, and make data-driven decisions with ease.<br>
+        The versatility of Plotly Express extends to its ability to handle various data types and scales. Whether you have time-series data, geographic information, or multidimensional datasets, we can leverage Plotly Express to create visually rich visualizations that effectively convey complex information.<br>Visist the project for experiment.
+        <br><a href="https://tariqaziz9164-streamlit-app-fzs00a.streamlit.app/">Data Visualization</a>
+        Additionally, Plotly Express seamlessly integrates with Jupyter notebooks, web applications, and other data analysis tools, enhancing the flexibility and accessibility of your visualizations. We can deploy your Plotly Express visualizations on various platforms, allowing you to share and present your insights effortlessly.<br>
+        Partnering with us for your data visualization needs means collaborating with a team that prioritizes impactful storytelling through data. We are committed to delivering visualizations that effectively communicate your data's narrative, empowering you to make informed decisions and drive business success.</h6>
+    </div> 
+    <br>
+        <section>
+      <div class="container mt-4">
+        <div class="row">
+
+          <div class="col-4">
+
+            <img src="static/plotly1.png" class="img-fluid shadow-lg myimg1 rounded-3" alt="web_design1">
+
+          </div>
+
+          <div class="col-4">
+
+            <img src="static/plotly2.png" class="img-fluid shadow-lg myimg1 rounded-3" alt="web_design2">
+          </div>
+
+          <div class="col-4">
+
+            <img src="static/plotly5.png" class="img-fluid myimg1 shadow-lg  rounded-3" alt="web_design3">
+          </div>
+
+        </div>
+      </div>
+      <hr>
+    </section>
+    <div class="container">
+       <h6> Contact us today to discuss your back-end service requirements and discover how we can help you optimize your data management processes for improved business efficiency and growth.<a href="{{url_for('contact')}}">contact us</a> Or Whatsapp <a href="https://wa.me/923339139164" target="_blank" class="text-success">
+            <i class="bi-whatsapp" style="font-size: 1rem;"></i></a></h6>
+    </div> 
+    </div>
+    <hr>
+
+
+
+
+
+
+
+
+
+  <!--footer-->
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row text-center">
+
+             <section class="col-sm-12 col-lg-4">
+              <span><b>Page Links:</b></span><br>
+               <a class="logo-footer navbar-brand" href="{{url_for('index')}}"><img src="static/logo.png"> </a><br>
+               <a href="{{url_for('contact')}}">Contact</a><br>
+               <a href="{{url_for('MyWork')}}">Designing </a><br>
+               <a href="{{url_for('dashboard')}}">Dashboard</a><br>
+               <a href="#">Database</a><br>
+               <a href="{{url_for('projects')}}">Projects</a>
+             </section>
+
+        <section class="col-sm-12 col-lg-4 my-2">
+          <span><b>Address:</b></span><br>
+          <p>Tehseel Pabbi,Dist Nowshera GT Road Pakistan.<br>
+          Email: azizdigitalsysten@gmail.com <br>
+          Cell: 00923339139164</p>
+        </section>
+
+        <section class="col-sm-12 col-lg-4">
+          <span><b>Join us:</b></span><br>
+          <a href="https://facebook.com/digitalonlinedesign/" target="_blank">
+            <i class="bi-facebook" style="font-size: 2rem;"></i></a><br>
+
+          <a href="https://wa.me/923339139164" target="_blank" class="text-success">
+            <i class="bi-whatsapp" style="font-size: 2rem;"></i></a><br>
+
+          <a href="https://instagram.com/tariqaziz9164/" target="_blank" class="text-danger">
+            <i class="bi-instagram" style="font-size: 2rem;"></i></a>
+        </section>
+
+        <div class="text-center">
+          &copy; DigitalOnline 2018
+
+        </div>
+      </div>
+   </main>   
+  </footer>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

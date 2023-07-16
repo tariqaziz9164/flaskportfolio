@@ -15,8 +15,8 @@
    <!-- my style style.css-->
 
  <link rel="stylesheet" type="text/css" href="static/style.css">
-
-  <title>sahabzada Allaid</title>
+  <link rel="icon" type="image/png" href="static/icon.png">
+  <title>Projects</title>
 </head>
 
 <body>
@@ -24,24 +24,32 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="static/logo.png"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>   
         </button>
-        <div class="collapse navbar-collapse bg-primary" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse bg-primary" id="navbarTogglerDemo02">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="{{url_for('index')}}">Home</a>
+              <a class="nav-link" href="{{url_for('index')}}">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="{{url_for('MyWork')}}">Design Work</a>
+              <a class="nav-link" href="{{url_for('MyWork')}}">Designing</a>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('dashboard')}}">Dashboard Design</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="{{url_for('backend')}}">Backend Design</a>
+   
+            </li>                        
 
 
             
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Projects</a>
+              <a class="nav-link active" href="#">Projects</a>
    
             </li>
 
@@ -72,7 +80,7 @@
         <div class="row">
           <div class="col-md-4 shadow">
             <div class="card text-center">
-              <img src="static/butterfly.gif" class="card-img-top shadow" alt="card1">
+              <img src="static/tailorlogo.png" class="card-img-top shadow" alt="card1">
               <div class="card-body">
                 <h6 class="card-title">Tailor Shop Management System</h6>
                 <a class="btn btn-primary btn-lg shadow" href="https://alishop.streamlit.app/">Explore</a>
@@ -81,58 +89,36 @@
           </div>
           <div class="col-md-4 shadow">
             <div class="card text-center">
-              <img src="static/chart.gif" class="card-img-top shadow" alt="card2">
+              <img src="static/chartlogo.png" class="card-img-top shadow" alt="card2">
               <div class="card-body">
                 <h6 class="card-title">Data Analysis and Visualization</h6>
-                <a href="#" class="btn btn-primary btn-lg shadow">Explore</a>
+                <a href="https://tariqaziz9164-streamlit-app-fzs00a.streamlit.app/" class="btn btn-primary btn-lg shadow">Explore</a>
               </div>
             </div>
           </div>
           <div class="col-md-4 shadow">
             <div class="card text-center">
-              <img src="static/rocket.gif" class="card-img-top shadow" alt="card3">
+              <img src="static/datalogo.png" class="card-img-top shadow" alt="card3">
               <div class="card-body">
                 <h6 class="card-title">Patient Management System with MySQL</h6>
 
-                <a href="#" class="btn btn-primary btn-lg shadow">Explore</a>
+                <a href="https://tariqaziz9164-patient-app-6uy8n9.streamlit.app/" class="btn btn-primary btn-lg shadow">Explore</a>
               </div>
             </div>
           </div>
-           <hr>
-          <div class="col-md-4 shadow">
-            <div class="card text-center">
-              <img src="static/juggling.gif" class="card-img-top shadow" alt="card3">
-              <div class="card-body">
-                <h6 class="card-title">Designing work</h6>
-
-                <a href="url_for{{('AppDesign')}}" class="btn btn-primary btn-lg shadow">Explore</a>
-              </div>
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-lg-4 shadow my-3">
+             <div class="card text-center">
+              <img src="static/schoollogo.png" class="card-img-top shadow" alt="card3">
+               <div class="card-body">
+                 <h6 class="card-title">School Management System</h6>
+                 <a href="https://school.streamlit.app/" class="btn btn-primary btn-lg shadow">Explore</a>
+               </div>
+             </div>
             </div>
           </div>
 
-          <div class="col-md-4 shadow">
-            <div class="card text-center">
-              <img src="static/card1.jpg" class="card-img-top shadow" alt="card3">
-              <div class="card-body">
-                <h6 class="card-title">App Design</h6>
-
-                <a href="#" class="btn btn-primary btn-lg shadow">Explore</a>
-              </div>
-            </div>
-          </div>    
-
-
-          <div class="col-md-4 shadow">
-            <div class="card text-center">
-              <img src="static/saly-38.jpg" class="card-img-top shadow" alt="card3">
-              <div class="card-body">
-                <h6 class="card-title">Product Design</h6>
-
-                <a href="#" class="btn btn-primary btn-lg shadow">Explore</a>
-              </div>
-            </div>
-          </div>                
-
+           <hr>               
         </div>
       </div>
     </section>
@@ -145,14 +131,15 @@
     <div class="container-fluid">
       <div class="row text-center">
 
-        <section class="col-sm-12 col-lg-4">
-          <span><b>Page Links:</b></span><br>
-          <a class="logo-footer navbar-brand" href="{{url_for('index')}}"><img src="static/logo.png"> </a><br>
-          <a href="{{url_for('index')}}">Home</a><br>
-          <a href="{{url_for('contact')}}">Contact</a><br>
-          <a href="{{url_for('MyWork')}}">Design</a><br>
-          
-        </section>
+             <section class="col-sm-12 col-lg-4">
+              <span><b>Page Links:</b></span><br>
+               <a class="logo-footer navbar-brand" href="{{url_for('index')}}"><img src="static/logo.png"> </a><br>
+               <a href="{{url_for('contact')}}">Contact</a><br>
+               <a href="{{url_for('MyWork')}}">Designing </a><br>
+               <a href="{{url_for('dashboard')}}">Dashboard</a><br>
+               <a href="{{url_for('backend')}}">Database</a><br>
+               <a href="#">Projects</a>
+             </section>
 
         <section class="col-sm-12 col-lg-4 my-2">
           <span><b>Address:</b></span><br>

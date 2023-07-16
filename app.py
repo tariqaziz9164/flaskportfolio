@@ -10,11 +10,13 @@ class Contact(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False)
+    contact = db.Column(db.String(20),nullable=True)
     message = db.Column(db.Text, nullable=False)
     
-    def __init__(self,name,email,message):
+    def __init__(self,name,email,contact,message):
         self.name = name
         self.email = email
+        self.contact = contact
         self.message = message
 
 
@@ -24,8 +26,9 @@ def contact():
     if request.method == 'POST':
         name = request.form['name']
         email = request.form['email']
+        contact = request.form['contact']
         message = request.form['message']
-        contact_form = Contact(name=name, email=email, message=message)
+        contact_form = Contact(name=name, email=email,contact=contact, message=message)
         db.session.add(contact_form)
         db.session.commit()
         if contact_form.id:
@@ -48,14 +51,15 @@ def projects():
 @app.route('/MyWork')
 def MyWork():
     return render_template('MyWork.html')  
+    
 
-@app.route('/ProductDesign')
-def ProductDesign():
-    return render_template('ProductDesign.html')
+@app.route('/dashboard')
+def dashboard():
+    return render_template('dashboard.html') 
 
-@app.route('/AppDesign')
-def AppDesign():
-    return render_template('AppDesign.html')    
+@app.route('/backend')
+def backend():
+    return render_template('backend.html') 
 
 
 @app.route('/thank_you')
@@ -65,5 +69,6 @@ def thank_you():
 if __name__ == '__main__':
 
     with app.app_context():
+         #db.drop_all()
          db.create_all()  # create the table before running the app
     app.run(debug=True)

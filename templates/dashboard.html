@@ -28,7 +28,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="static/logo.png" alt="logo"> </a>
+        <a class="navbar-brand" href="{{url_for('index')}}"><img src="static/logo.png" alt="logo"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>   
         </button>
@@ -61,14 +61,7 @@
             <li class="nav-item">
               <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
             </li>
-
-            
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
            
-
-
           </ul>
 
         </div>
@@ -78,7 +71,7 @@
   <main>
 
     <div class="container">
-       <h1 class="myh1 shadow pb animate__animated animate__bounce animate__delay-2s">Dashboards User Interface</h1>
+       <h1 class="myh1 shadow pb animate__animated animate__bounce animate__delay-2s">My Created Dashboards</h1>
        
     </div>
 
@@ -88,18 +81,18 @@
 
           <div class="col-4">
 
-            <img src="static/graphcard.png" class="img-fluid shadow-lg myimg1 rounded-3" alt="web_design1">
+            <img src="static/1.png" class="img-fluid shadow-lg myimg1 rounded-3" alt="web_design1">
 
           </div>
 
           <div class="col-4">
 
-            <img src="static/card3Nav.png" class="img-fluid shadow-lg myimg1 rounded-3" alt="web_design2">
+            <img src="static/2.png" class="img-fluid shadow-lg myimg1 rounded-3" alt="web_design2">
           </div>
 
           <div class="col-4">
 
-            <img src="static/card4Nav.png" class="img-fluid myimg1 shadow-lg  rounded-3" alt="web_design3">
+            <img src="static/3.png" class="img-fluid myimg1 shadow-lg  rounded-3" alt="web_design3">
           </div>
 
         </div>
@@ -111,10 +104,10 @@
       <div class="row justify-content-around">
         <div class="col-4">
            <h1 class="myh1 pb ">User Friendly Interface</h1>
-           <p>One of my specialties lies in crafting captivating dashboards and user-friendly interfaces that revolutionize the way businesses interact with their data. Seamlessly blending form and function, these visually stunning and intuitive interfaces empower stakeholders to navigate complex datasets effortlessly. By distilling complex information into digestible visualizations, I empower decision-makers to grasp critical trends and patterns, leading to agile, data-driven strategies.</p>
-           <h7>We understand that data visualization plays a crucial role in making informed business decisions. Our team of experts is here to help you transform raw data into meaningful insights by creating intuitive and interactive dashboards tailored to your unique needs.</h7>
+           <h6>One of my specialties lies in crafting captivating dashboards and user-friendly interfaces that revolutionize the way businesses interact with their data. Seamlessly blending form and function, these visually stunning and intuitive interfaces empower stakeholders to navigate complex datasets effortlessly. By distilling complex information into digestible visualizations, I empower decision-makers to grasp critical trends and patterns, leading to agile, data-driven strategies.</h6>
+           <h6>We understand that data visualization plays a crucial role in making informed business decisions. Our team of experts is here to help you transform raw data into meaningful insights by creating intuitive and interactive dashboards tailored to your unique needs.</h6>
         </div>
-        <div class="col-6">
+        <div class="col-6 shadow">
           <img src="static/database1.png" class="mym1 img-fluid rounded mx-auto d-block" alt="web_design3">
         </div>
       </div>
@@ -129,66 +122,79 @@
             <h3>Customized Dashboards: </h3> 
             <div class="container text-center">
               <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-6 shadow">
                   <img src="static/screendatavisual.png" class="mym1 img-fluid rounded mx-auto" alt="web_design3">
                 </div> 
              </div>
             </div>
             <br> 
-            <li>We believe that every business has unique requirements. Our team works closely with you to understand your goals, and data sources. We then design and develop dashboards that align with your specific needs, ensuring you have the right visualizations to monitor your business metrics effectively.<br><a href="ProductDesign.html">more infromation</a>
+            <li>
+              <h4>We believe that every business has unique requirements. Our team works closely with you to understand your goals, and data sources. We then design and develop dashboards that align with your specific needs, ensuring you have the right visualizations to monitor your business metrics effectively.</h4>
+              <br>
+              <a href="ProductDesign.html">more infromation</a>
             </li>
 
            <hr>
            <h3>Data Integration:</h3>
             <div class="container text-center">
               <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-6 shadow">
                   <img src="static/image101.png" class="mym1 img-fluid rounded mx-auto" alt="web_design3">
                 </div> 
              </div>
             </div>
             <br>
-           <li> We have experience working with various data sources and formats, including spreadsheets, CSV, pdf, and cloud-based platforms. Our experts can seamlessly integrate your data into the dashboard, ensuring accurate and up-to-date information is displayed in real time.</li>
+           <li>
+             <h4>We have experience working with various data sources and formats, including spreadsheets, CSV, pdf, and cloud-based platforms. Our experts can seamlessly integrate your data into the dashboard, ensuring accurate and up-to-date information is displayed in real time.</h4>
+           </li>
            <hr>
            <h3>Interactive Visualizations:</h3>
            <h3>Data Integration:</h3>
             <div class="container text-center">
               <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-6 shadow">
                   <img src="static/titanicHisto.png" class="mym1 img-fluid rounded mx-auto" alt="web_design3">
                 </div> 
              </div>
             </div>
             <br>
-           <li>Static reports are a thing of the past. Our dashboards are designed to be interactive, allowing you to drill down into the details, filter data, and explore trends effortlessly. With interactive charts, graphs, and maps, you can gain a deeper understanding of your data and uncover valuable insights with just a few clicks.<br>For more information please visite our project
-            <a href="ProductDesign.html">Data Analysis and Visualization</a></li>
+           <li>
+            <h4>Static reports are a thing of the past. Our dashboards are designed to be interactive, allowing you to drill down into the details, filter data, and explore trends effortlessly. With interactive charts, graphs, and maps, you can gain a deeper understanding of your data and uncover valuable insights with just a few clicks.<br>For more information please visite our project</h4>
+            <a href="ProductDesign.html">Data Analysis and Visualization</a>
+           </li>
            <hr>
            <h3>Mobile-Responsive Design:</h3>
             <div class="container text-center">
               <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-6 shadow">
                   <img src="static/Tablets.png" class="mym1 img-fluid rounded mx-auto" alt="web_design3">
                 </div> 
              </div>
             </div>
             <br> 
-           <li> In today's fast-paced business environment, accessing data on the go is essential. Our dashboards are built with mobile responsiveness in mind, ensuring that you can view and interact with your data seamlessly on any device. Stay connected and make informed decisions anytime, anywhere.</li>
+           <li>
+            <h4>In today's fast-paced business environment, accessing data on the go is essential. Our dashboards are built with mobile responsiveness in mind, ensuring that you can view and interact with your data seamlessly on any device. Stay connected and make informed decisions anytime, anywhere.</h4>
+           </li>
            <hr>
            <h3>Performance Optimization:</h3>
-           <li> We understand the importance of speed and performance when working with large datasets. Our team optimizes the dashboard's performance to ensure fast loading times, smooth data interactions, and minimal latency. You can rely on our expertise to handle complex data scenarios without compromising performance.</li>
+           <li>
+              <h4>We understand the importance of speed and performance when working with large datasets. Our team optimizes the dashboard's performance to ensure fast loading times, smooth data interactions, and minimal latency. You can rely on our expertise to handle complex data scenarios without compromising performance.</h4>
+           </li>
            <hr>
            <h3>Ongoing Support and Maintenance:</h3>
             <div class="container text-center">
               <div class="row justify-content-center">
-                <div class="col-6">
+                <div class="col-6 shadow">
                   <img src="static/Saly-10.jpg" class="mym1 img-fluid rounded mx-auto" alt="web_design3">
                 </div> 
              </div>
             </div>
             <br>
-           <li> Our relationship doesn't end with the delivery of your dashboard. We offer ongoing support and maintenance services to ensure your dashboards remain up to date, secure, and aligned with your evolving business needs. We're here to provide assistance, answer questions, and help you leverage your data effectively.<br>
-            <a href="https://wa.me/923339139164" target="_blank" class="text-success">
-            <i class="bi-whatsapp" style="font-size: 2rem;"></i>Contact any time</a></li>
+           <li>
+             <h4>Our relationship doesn't end with the delivery of your dashboard. We offer ongoing support and maintenance services to ensure your dashboards remain up to date, secure, and aligned with your evolving business needs. We're here to provide assistance, answer questions, and help you leverage your data effectively.</h4><br>
+             <a href="https://wa.me/923339139164" target="_blank" class="text-success">
+             <i class="bi-whatsapp" style="font-size: 2rem;"></i>Contact any time</a>
+           </li>
          </ul>
         </div>
       </div>

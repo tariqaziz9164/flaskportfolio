@@ -59,11 +59,7 @@ def dashboard():
 
 @app.route('/backend')
 def backend():
-    return render_template('backend.html') 
-
-@app.route('/ProductDesign.html')
-def ProductDesign():
-    return render_template('ProductDesign.html') 
+    return render_template('backend.html')  
 
 
 @app.route('/thank_you')

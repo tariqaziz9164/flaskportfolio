@@ -1,78 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
 
-     <head>
-      <!-- Required meta tags -->
-       <meta charset="utf-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1">
-
-       <!-- Bootstrap CSS -->
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-       <!--bootsrap icon-->
-       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
-       <!-- my style style.css-->
-
-       <link rel="stylesheet" type="text/css" href="static/style.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-       <!-- Icon -->
-       <link rel="icon" type="image/png" href="static/icon.png">
-
-       <title>Digital Online Data Bank</title>
-     </head>
-
- <body>
-
-  <!--navigation-->
-
-  <header>
-    
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="static/logo.png" alt="logo"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>   
-        </button>
-        <div class="collapse navbar-collapse bg-primary" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link  active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('MyWork')}}">Designing</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('dashboard')}}">Dashboard Design</a>
-            </li>  
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('backend')}}">Backend Design</a>
-   
-            </li>
-            
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
-   
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
-            </li>
-           
-
-
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
+{% block content %}
 
     <div class="container">
        <h1 class="myh1 shadow pb animate__animated animate__bounce animate__delay-2s">Unleashing the Potential of Data for Business Success</h1>
@@ -197,61 +125,7 @@
       </div>
     </section>
 
-    <!---google mape-->
-
-  </main>
-
-  <!--footer-->
-
-  <footer>
-    <div class="container-fluid">
-      <div class="row text-center">
-
-        <section class="col-sm-12 col-lg-4">
-          <span><b>Page Links:</b></span><br>
-          <a class="logo-footer navbar-brand" href="#"><img src="static/logo.png"> </a><br>
-          <a href="{{url_for('contact')}}">Contact</a><br>
-          <a href="{{url_for('MyWork')}}">Designing </a><br>
-          <a href="{{url_for('dashboard')}}">Dashboard</a><br>
-          <a href="{{url_for('backend')}}">Database</a><br>
-          <a href="{{url_for('projects')}}">Projects</a>
-        </section>
-
-        <section class="col-sm-12 col-lg-4 my-2">
-          <span><b>Address:</b></span><br>
-          <p>Tehseel Pabbi,Dist Nowshera GT Road Pakistan.<br>
-          Email: azizdigitalsysten@gmail.com <br>
-          Cell: 00923339139164</p>
-        </section>
-
-        <section class="col-sm-12 col-lg-4">
-          <span><b>Join us:</b></span><br>
-          <a href="https://facebook.com/digitalonlinedesign/" target="_blank">
-            <i class="bi-facebook" style="font-size: 2rem;"></i></a><br>
-
-          <a href="https://wa.me/923339139164" target="_blank" class="text-success">
-            <i class="bi-whatsapp" style="font-size: 2rem;"></i></a><br>
-
-          <a href="https://instagram.com/tariqaziz9164/" target="_blank" class="text-danger">
-            <i class="bi-instagram" style="font-size: 2rem;"></i></a>
-        </section>
-
-        <div class="text-center">
-          &copy; DigitalOnline 2018
-
-        </div>
-      </div>
-  </footer>
-  <hr>
+{% endblock %}
 
 
-  <!-- Option 1: Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous">
-  </script>
-
- </body>
-
-</html>
 

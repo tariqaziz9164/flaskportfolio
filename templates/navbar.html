@@ -1,43 +1,38 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="static/logo.png" alt="logo"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>   
-        </button>
-        <div class="collapse navbar-collapse bg-primary" id="navbarTogglerDemo02">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item ">
-              <a class="nav-link  active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('MyWork')}}">Designing</a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{{url_for('index')}}"><img src="static/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>   
+    </button>
+    <div class="collapse navbar-collapse bg-primary" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item {% if active_page == 'index' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'index' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('index')}}">Home</a>
+        </li>
+        <li class="nav-item {% if active_page == 'MyWork' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'MyWork' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('MyWork')}}">Designing</a>
+        </li>
+        <li class="nav-item {% if active_page == 'dashboard' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'dashboard' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('dashboard')}}">Dashboard Design</a>
+        </li>  
+        <li class="nav-item {% if active_page == 'backend' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'backend' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('backend')}}">Backend Design</a>
+        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('dashboard')}}">Dashboard Design</a>
-            </li>  
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('backend')}}">Backend Design</a>
-   
-            </li>
-            
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('projects')}}">Projects</a>
-   
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('contact')}}">Contact</a>
-            </li>
-           
+        <li class="nav-item {% if active_page == 'projects' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'projects' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('projects')}}">Projects</a>
+        </li>
+        <li class="nav-item {% if active_page == 'about' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'about' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('about')}}">About Us</a>
+        </li>
 
 
-          </ul>
+        <li class="nav-item {% if active_page == 'contact' %}active{% endif %}">
+          <a class="nav-link {% if active_page == 'contact' %}text-decoration-none fw-bold{% endif %}" href="{{url_for('contact')}}">Contact</a>
+        </li>
 
-        </div>
-      </div>
-    </nav>
-    <!-- Include Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      </ul>
+    </div>
+  </div>
+</nav>
+

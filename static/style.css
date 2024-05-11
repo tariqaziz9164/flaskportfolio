@@ -115,6 +115,12 @@
 
 
 }
+.card-img-ttop {
+      max-width: 100px;
+      max-height: 100px; /* Adjust the max height as needed */
+      
+    }
+
 
 
 
@@ -134,3 +140,5 @@
       margin-top: 20rem;
    }
 }
+
+

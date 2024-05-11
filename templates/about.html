@@ -1,0 +1,148 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% set background_image_url = url_for('static', filename='bgimage.jpeg') %}
+
+<style>
+  /* CSS for setting background image */
+  .background-image {
+    background-image: url('{{ background_image_url }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    
+    height: 300px;
+    
+    margin-bottom: 100px;
+
+    /* Add additional styles as needed */
+  }
+</style>
+
+<div class="container-flued background-image">
+  
+</div>
+ <div class="container ">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>About Us</h2>
+      <p>Welcome to DigitalOnline, where we are dedicated to unleashing the potential of data for business success. Our team consists of passionate individuals who excel in various domains, working tirelessly to provide comprehensive solutions tailored to your needs.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>Our Mission</h3>
+      <p>At DigitalOnline, we believe in the power of data to drive business growth and innovation. Our mission is to empower businesses with the insights they need to make informed decisions, unlock new opportunities, and achieve sustainable success.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h3>What We Offer</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <h4>Database Builders:</h4>
+          <p>Our team specializes in building robust and scalable databases tailored to your business requirements. From data collection to storage and management, we ensure that your data infrastructure is optimized for efficiency and reliability.</p>
+        </div>
+        <div class="col-lg-12">
+          <h4>Website Builders:</h4>
+          <p>We create stunning and functional websites that captivate your audience and elevate your online presence. With our expertise in web development, we design and develop websites that are both visually appealing and user-friendly.</p>
+        </div>
+        <div class="col-lg-12">
+          <h4>Analysts:</h4>
+          <p>Leveraging advanced analytics techniques, we uncover valuable insights hidden within your data. Our analysts analyze data trends, patterns, and correlations to provide actionable recommendations that drive business growth and competitiveness.</p>
+        </div>
+        <div class="col-lg-12">
+          <h4>Dashboards Designers:</h4>
+          <p>We design intuitive and interactive dashboards that visualize your key performance indicators (KPIs) and metrics in real-time. Our dashboards empower you to monitor performance, track progress, and make data-driven decisions with ease.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+      <h2>Our Commitment</h2>
+      <p>At DigitalOnline, we are committed to delivering excellence in everything we do. Whether it's building databases, designing websites, analyzing data, or creating content, we strive for perfection and exceed expectations to ensure your success.</p>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container mt-5">
+    <h2>Meet Our Team</h2>
+    <div class="row">
+      <!-- Tariq Aziz -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="static/Tariq Aziz.png" class="card-img-ttop" alt="Tariq Aziz">
+          <div class="card-body">
+            <h5 class="card-title">Tariq Aziz</h5>
+            <p class="card-text">Programmer</p>
+            <p class="card-text">Tariq is an exceptional programmer with expertise in various programming languages and technologies. He is passionate about developing efficient and scalable solutions to complex problems.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Dr Saeed -->
+      <div class="col-lg-6 mb-4">
+
+        <div class="card">
+          <img src="static/Dr.Saeed_UR_Rehma.png" class="card-img-ttop" alt="Dr. Saeed-Ur-Rehman">
+          <div class="card-body">
+            <h5 class="card-title">Dr. Saeed-Ur-Rehman</h5>
+            <p class="card-text">Public Health and Development Specialist</p>
+            <p class="card-text">Dr. Saeed-Ur-Rehman is an esteemed public health and development specialist with a wealth of experience in improving community health outcomes. He is dedicated to implementing evidence-based strategies for sustainable development.</p>
+          </div>
+        </div>
+
+      </div>
+      <!-- M. Hamza -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="static/Hamzakhan.png" class="card-img-ttop" alt="M. Hamza">
+          <div class="card-body">
+            <h5 class="card-title">M. Hamza</h5>
+            <p class="card-text">Designer</p>
+            <p class="card-text">M. Hamza is a talented designer with a keen eye for aesthetics and user experience. He specializes in creating visually appealing designs that enhance user engagement.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Danyal -->
+      <div class="col-lg-6 mb-4">
+        <div class="card">
+          <img src="static/Danyal.png" class="card-img-ttop" alt="M. Danyal">
+          <div class="card-body">
+            <h5 class="card-title">M. Danyal</h5>
+            <p class="card-text">Content Creator</p>
+            <p class="card-text">M. Danyal is a creative content creator with a knack for storytelling and engaging audiences. He excels in producing compelling content across various platforms.</p>
+          </div>
+        </div>
+      </div>
+      <h5>Join us on this journey to unlock the full potential of your business with the power of data.</h5>
+    </div>
+  </div>
+  <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

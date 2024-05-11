@@ -42,29 +42,35 @@ def contact():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html' , active_page = 'index')
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')    
+    return render_template('projects.html' , active_page = 'projects')    
 
 @app.route('/MyWork')
 def MyWork():
-    return render_template('MyWork.html')  
+    return render_template('MyWork.html' ,active_page = 'MyWork')  
     
 
 @app.route('/dashboard')
 def dashboard():
-    return render_template('dashboard.html') 
+    return render_template('dashboard.html', active_page = 'dashboard') 
 
 @app.route('/backend')
 def backend():
-    return render_template('backend.html')  
+    return render_template('backend.html' , active_page = 'backend')  
+
+
+@app.route('/about')
+def about():
+    return render_template('about.html' , active_page = 'about')
+
 
 
 @app.route('/thank_you')
 def thank_you():
-    return render_template('thank_you.html')
+    return render_template('thank_you.html' , active_page = 'thank_you')
 
 if __name__ == '__main__':
 
